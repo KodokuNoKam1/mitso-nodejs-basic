@@ -9,7 +9,7 @@ const create = async () => {
         throw new Error('Операция с файловой системой не удалась');
     } catch (err) {
         if (err.code === 'ENOENT') {
-            await fs.writeFile(filePath, 'By Kodoku No Kami');
+            await fs.writeFile(filePath, 'I am fresh and young');
         } else {
             throw new Error('Операция с файловой системой не удалась');
         }
